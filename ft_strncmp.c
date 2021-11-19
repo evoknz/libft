@@ -6,7 +6,7 @@
 /*   By: aperrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 08:46:26 by aperrien          #+#    #+#             */
-/*   Updated: 2021/11/16 09:28:28 by aperrien         ###   ########.fr       */
+/*   Updated: 2021/11/19 12:16:29 by aperrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* The strncmp() function lexicographically compare

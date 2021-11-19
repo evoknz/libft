@@ -6,7 +6,7 @@
 /*   By: aperrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 08:37:58 by aperrien          #+#    #+#             */
-/*   Updated: 2021/11/17 11:53:23 by aperrien         ###   ########.fr       */
+/*   Updated: 2021/11/19 12:19:56 by aperrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -20,9 +20,9 @@ Retourne la nouvelle chaine de caracteres. NULL si l'allocation echoue.*/
 	size_t	i;
 	size_t	j;
 
-	str = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (s1 == NULL && s2 == NULL)
+	if (s1 == NULL || s2 == NULL)
 		return (NULL);
+	str = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!str)
 		return (NULL);
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: aperrien <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 08:12:45 by aperrien          #+#    #+#             */
-/*   Updated: 2021/11/17 11:51:35 by aperrien         ###   ########.fr       */
+/*   Updated: 2021/11/19 12:15:13 by aperrien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -22,11 +22,11 @@ a pointer to the allocated memory.
 If successful, the functions return a pointer to allocated memory, If there
  is an error, they return a NULL pointer and set errno to ENOMEM.*/
 {
-	void	*ptr;
+	char	*ptr;
 
-	ptr = (void *)malloc(count * size);
+	ptr = malloc(count * size);
 	if (!ptr)
 		return (NULL);
-	ft_bzero(ptr, count);
+	ft_bzero(ptr, count * size);
 	return (ptr);
 }
